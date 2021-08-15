@@ -5,7 +5,7 @@
         <meta charset="utf=8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
-            Paradise
+            Paradise Puzzle
         </title>
         <style>
             body{
@@ -32,35 +32,67 @@
                 -webkit-transform: scaleX(-1);
                 transform: scaleX(-1);
             }
-            .CenterImage{
+            .Center{
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
                 width: 50%;
             }
+            .hide{
+                display: none;
+            } 
+            .CenterText{
+                text-align: center;
+            }    
+            .backButton{
+                display: none;
+            }
         </style>
     </head>
     <body>
-        <h1>This is the head man lol</h1>
-        <p>
-            Some random as paragraph lmao lol xd :DDD
-            <br> 
-            <br>
-            <b>YO WTF</b> 
+
+        <script>
+            function GemsButtonPressed(){
+                document.getElementById("FreeGemsText").innerHTML = "YOU THOUGHT, GET ROLLED NOOB"
+                document.getElementById("CocGemsButtonPressed").innerHTML
+                 = "Damn, you really that desperate";
+                document.getElementById("GemsButton").style.display = "none";
+                var element = document.getElementById("Gandalf");
+                element.classList.toggle("hide");
+                var element2 = document.getElementById("Gandalf2");
+                element2.classList.toggle("hide")
+                var element3 = document.getElementById("backButtonX");
+                element3.classList.toggle("backButton")  
+            }
+            function goBack(){
+                window.history.back();
+            }
+            function backToStart(){
+                location.reload()
+            }
+        </script>
+        <h1 id="FreeGemsText" class="CenterText">Free gems</h1>
+        <br>
+        <p> 
+            <b id="CocGemsButtonPressed">YO WTF</b> 
             <br>
             <a a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
             target="_blank"> 
-            <button>Free Clash of clans gems</button> 
+            <button id="GemsButton" onclick="GemsButtonPressed()" style="background-color: green; border-color: green; color:white;">Free Clash of clans gems</button> 
             </a>
             <br>
+            <button onclick="backToStart" id="backButtonX" class="backButton" 
+            style="color: violet; background-color: teal;"
+            >Back</button>
+            <br>
             <div class="row">
-                <div class="column CenterImage">
-                    <img src="Gandalf_the_Grey.jpg" 
+                <div class="column Center">
+                    <img id="Gandalf" class="" src="Gandalf_the_Grey.jpg" 
                     alt="Gandalf" style="width:100%">
                 </div>
-                <div class="column FlipedImage CenterImage" >
-                    <img src="Gandalf_the_Grey.jpg" alt="Gandalf"
-                    style="width: 100%;"
+                <div class="column FlipedImage Center" >
+                    <img id="Gandalf2" class="" src="Gandalf_the_Grey.jpg" alt="Gandalf"
+                    style="width:100%"
                     >
                 </div>
             </div>
