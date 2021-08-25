@@ -1,3 +1,9 @@
 .FreeGemsButton{
-    color: green;
+    background: rgb(93,139,79);
+background: linear-gradient(150deg, rgba(93,139,79,1) 17%, rgba(38,244,70,1) 48%);
+border: green;  
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(112,67,149,1) 100%);
 }

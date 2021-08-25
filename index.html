@@ -2,6 +2,7 @@
 <html lang="en">
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="utf=8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
@@ -9,7 +10,6 @@
         </title>
         <style>
             body{
-                background-color: gray;
                 background-repeat:  no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
@@ -18,7 +18,7 @@
             .column{
                 float: left;
                 width: 33.33%;
-                padding: 0.1px;
+                padding: 0px;
             }
             .row ::after{
                 content: "";
@@ -82,11 +82,11 @@
         <h1 id="FreeGemsText" class="CenterText">Free gems</h1>
         <br>
         <p> 
-            <b id="CocGemsButtonPressed">YO WTF</b> 
+            <b id="CocGemsButtonPressed" style="color: green;">YO WTF</b> 
             <br>
             <a a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
             target="_blank"> 
-            <button id="GemsButton" onclick="GemsButtonPressed()" style="background-color: green; border-color: green; color:white;">Free Clash of Clans gems</button> 
+            <button id="GemsButton" onclick="GemsButtonPressed()" class="FreeGemsButton">Free Clash of Clans gems</button> 
             </a>
             <br>
             <button onclick="backToStart" id="backButtonX" class="backButton" 
