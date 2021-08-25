@@ -48,7 +48,7 @@
                 display: none;
             }
             p {
-                margin: 25px 25px 10px 0px;
+                margin: 0px 0px 23px 30px;
             }
         </style>
     </head>
@@ -60,17 +60,20 @@
                 document.getElementById("CocGemsButtonPressed").innerHTML
                  = "Damn, you really that desperate";
                 document.getElementById("GemsButton").style.display = "none";
-                var element = document.getElementById("Gandalf");
+                let element = document.getElementById("Gandalf");
                 element.classList.toggle("hide");
-                var element2 = document.getElementById("Gandalf2");
+                let element2 = document.getElementById("Gandalf2");
                 element2.classList.toggle("hide")
-                var element3 = document.getElementById("backButtonX");
+                let element3 = document.getElementById("backButtonX");
                 element3.classList.toggle("backButton")  
-                var element4 = document.getElementById("Continue");
+                let element4 = document.getElementById("Continue");
                 element4.classList.toggle("hide")
             }
             function Level2(){
-
+                let GandalfPic = document.getElementById("Gandalf");
+                GandalfPic.classList.toggle("hide")
+                let GandalfPic2 = document.getElementById("Gandalf2");
+                GandalfPic2.classList.toggle("hide")
             }
             function goBack(){
                 window.history.back();
@@ -93,7 +96,7 @@
             style="color: violet; background-color: teal;"
             >Back</button>
             <br>
-            <button onclick="GandalfPressed" class="p" id="Continue" style="background-color: red;border-color: red;color: black;">Not Free Gems</button>
+            <button onclick="Level2" class="p" id="Continue" style="background-color: red;border-color: red;color: black;">Not Free Gems</button>
             <div class="row">
                 <div class="column Center">
                     <img id="Gandalf" class="" src="Gandalf_the_Grey.jpg" 
