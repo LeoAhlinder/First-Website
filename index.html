@@ -70,16 +70,15 @@
                 element4.classList.toggle("hide")
             }
             function Level2(){
-                let GandalfPic = document.getElementById("Gandalf");
-                GandalfPic.classList.toggle("hide")
-                let GandalfPic2 = document.getElementById("Gandalf2");
-                GandalfPic2.classList.toggle("hide")
+                let BackButton = document.getElementById("Continue");
+                BackButton.classList.toggle("hide")
             }
             function goBack(){
                 window.history.back();
             }
             function backToStart(){
-                location.reload()
+                let BackButton = document.getElementById("backButtonX");
+                BackButton.classList.toggle("hide")
             }
         </script>
         <h1 id="FreeGemsText" class="CenterText">Free gems</h1>
